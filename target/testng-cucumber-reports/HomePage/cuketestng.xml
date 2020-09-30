@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="1" passed="0" skipped="0" total="1">
+    <suite duration-ms="2098" name="cucumber.runtime.formatter.TestNGFormatter">
+        <test duration-ms="2098" name="cucumber.runtime.formatter.TestNGFormatter">
+            <class name="Home Page Verifications">
+                <test-method duration-ms="2098" finished-at="2020-09-29T15:15:16Z" name="Check Blog Link displayed" started-at="2020-09-29T15:15:16Z" status="FAIL">
+                    <exception class="java.lang.IllegalArgumentException">
+                        <message>
+                            <![CDATA[Given User navigates homepage...............................................failed
+Then User enters "" into search bar.........................................skipped
+And User selects first suggestion element...................................skipped
+Then User selects first location............................................skipped
+Then User should be redirected to restaurants page..........................skipped
+And Restaurants should be listed............................................skipped
+Then User clicks on Test Restaurant.........................................skipped
+And User checks swiper menu items...........................................skipped
+When User add a non varianted product to basket.............................skipped
+When User adds varianted product to basket..................................skipped
+Then User click on add to cart button.......................................skipped
+When User adds varianted product to basket..................................skipped
+And User increases product count by 1.......................................skipped
+And User increases product count by 1.......................................skipped
+And User decreases product count by 1.......................................skipped
+Then User click on add to cart button.......................................skipped
+And User fills the address form.............................................skipped
+]]>
+                        </message>
+                        <full-stacktrace>
+                            <![CDATA[java.lang.IllegalArgumentException: wait For Condition "PageLoad" isn't supported.
+	at WebConnector.webconnector.waitForCondition(webconnector.java:269)
+	at applicationpages.Homepage.goToHomePage(Homepage.java:29)
+	at stepdefs.HomePageSteps.userNavigatesHomepage(HomePageSteps.java:48)
+	at ✽.User navigates homepage(file:src/test/resources/features/HomePage/01_NavigateTo_HomePage.feature:6)
+]]>
+                        </full-stacktrace>
+                    </exception>
+                </test-method>
+            </class>
+        </test>
+    </suite>
+</testng-results>

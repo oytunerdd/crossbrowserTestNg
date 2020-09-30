@@ -1,0 +1,468 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-29T12:15:14.103Z",
+        "before": [
+          {
+            "result": {
+              "duration": 83400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HomePageSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Check Blog Link displayed",
+        "description": "",
+        "id": "home-page-verifications;check-blog-link-displayed",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat WebConnector.webconnector.saveScreenshotsForScenario(webconnector.java:121)\r\n\tat WebConnector.webconnector.closeDriver(webconnector.java:114)\r\n\tat stepdefs.HomePageSteps.after(HomePageSteps.java:37)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:26)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:20)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:65)\r\n\tat cucumber.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:16)\r\n\tat cucumber.runner.TestStep.executeStep(TestStep.java:65)\r\n\tat cucumber.runner.TestStep.run(TestStep.java:50)\r\n\tat cucumber.runner.TestCase.run(TestCase.java:50)\r\n\tat cucumber.runner.Runner.runPickle(Runner.java:50)\r\n\tat io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:69)\r\n\tat io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:24)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)\r\n\tat org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)\r\n\tat org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)\r\n\tat org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)\r\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\r\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\r\n\tat java.base/java.lang.Thread.run(Thread.java:835)\r\n",
+              "duration": 158800,
+              "status": "failed"
+            },
+            "match": {
+              "location": "HomePageSteps.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.IllegalArgumentException: wait For Condition \"PageLoad\" isn\u0027t supported.\r\n\tat WebConnector.webconnector.waitForCondition(webconnector.java:269)\r\n\tat applicationpages.Homepage.goToHomePage(Homepage.java:29)\r\n\tat stepdefs.HomePageSteps.userNavigatesHomepage(HomePageSteps.java:48)\r\n\tat ✽.User navigates homepage(file:src/test/resources/features/HomePage/01_NavigateTo_HomePage.feature:6)\r\n",
+              "duration": 97759400,
+              "status": "failed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000330500,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "User navigates homepage",
+            "match": {
+              "location": "HomePageSteps.userNavigatesHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3500,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "User enters \"\" into search bar",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageSteps.userEntersIntoSearchBar(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 54200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 3100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 8,
+            "name": "User selects first suggestion element",
+            "match": {
+              "location": "HomePageSteps.userSelectsFirstSuggestionElement()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 131400,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 3800,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 9,
+            "name": "User selects first location",
+            "match": {
+              "location": "HomePageSteps.userSelectsFirstLocation()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2300,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 5400,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "User should be redirected to restaurants page",
+            "match": {
+              "location": "RestaurantListSteps.userShouldBeRedirectedToRestaurantsPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2300,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "Restaurants should be listed",
+            "match": {
+              "location": "RestaurantListSteps.restaurantsShouldBeListed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2200,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "User clicks on Test Restaurant",
+            "match": {
+              "location": "RestaurantListSteps.userClicksOnTestRestaurant()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 13,
+            "name": "User checks swiper menu items",
+            "match": {
+              "location": "RestaurantDetailSteps.userChecksSwiperMenu()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 15,
+            "name": "User add a non varianted product to basket",
+            "match": {
+              "location": "RestaurantDetailSteps.userAddANonVariantedProductToBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 17,
+            "name": "User adds varianted product to basket",
+            "match": {
+              "location": "RestaurantDetailSteps.userAddsVariantedProductToBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 20,
+            "name": "User click on add to cart button",
+            "match": {
+              "location": "RestaurantDetailSteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2300,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 22,
+            "name": "User adds varianted product to basket",
+            "match": {
+              "location": "RestaurantDetailSteps.userAddsVariantedProductToBasket()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6700,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 24,
+            "name": "User increases product count by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "RestaurantDetailSteps.userIncreasesProductCountBy(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2100,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 25,
+            "name": "User increases product count by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "RestaurantDetailSteps.userIncreasesProductCountBy(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2100,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "User decreases product count by 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "RestaurantDetailSteps.userDecreasesProductCountBy(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 28,
+            "name": "User click on add to cart button",
+            "match": {
+              "location": "RestaurantDetailSteps.userClickOnAddToCartButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2200,
+              "status": "skipped"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000,
+                  "status": "skipped"
+                },
+                "match": {
+                  "location": "HomePageSteps.beforeStep()"
+                }
+              }
+            ],
+            "line": 29,
+            "name": "User fills the address form",
+            "match": {
+              "location": "AddressFormSteps.userFillsTheAddressForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@home_page"
+          }
+        ]
+      }
+    ],
+    "name": "Home Page Verifications",
+    "description": "",
+    "id": "home-page-verifications",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/HomePage/01_NavigateTo_HomePage.feature",
+    "tags": []
+  }
+]

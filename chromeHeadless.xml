@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Chrome Headless Test Run" configfailurepolicy="continue">
+    <listeners>
+        <listener class-name="utils.Listeners.TestListener"/>
+    </listeners>
+    <test name="Chrome Headless Test"> <!--  preserve-order="true" -->
+        <parameter name="browser" value="headless"/>
+        <classes>
+            <class name="CompleteScenario"/>
+        </classes>
+    </test>
+</suite>

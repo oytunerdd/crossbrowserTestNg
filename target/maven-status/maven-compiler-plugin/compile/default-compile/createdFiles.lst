@@ -1,0 +1,4 @@
+Exceptions\NotFoundElement.class
+WebConnector\OptionsManager.class
+WebConnector\webconnector.class
+WebConnector\CapabilityFactory.class

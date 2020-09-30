@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 88.447 sec <<< FAILURE!
+runScenario(runner.HomePageRunner)  Time elapsed: 41.467 sec  <<< FAİLURE!
+java.lang.Exception: Not all Restaurants are listed !
+	at applicationpages.RestaurantList.CheckRestaurantsListed(RestaurantList.java:37)
+	at stepdefs.RestaurantListSteps.restaurantsShouldBeListed(RestaurantListSteps.java:28)
+	at ?.Restaurants should be listed(file:src/test/resources/features/HomePage/01_NavigateTo_HomePage.feature:11)
+
+runScenario(runner.HomePageRunner)  Time elapsed: 45.142 sec  <<< FAİLURE!
+java.lang.Exception: Not all Restaurants are listed !
+	at applicationpages.RestaurantList.CheckRestaurantsListed(RestaurantList.java:37)
+	at stepdefs.RestaurantListSteps.restaurantsShouldBeListed(RestaurantListSteps.java:28)
+	at ?.Restaurants should be listed(file:src/test/resources/features/HomePage/01_NavigateTo_HomePage.feature:11)
+
