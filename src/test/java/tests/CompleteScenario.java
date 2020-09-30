@@ -1,22 +1,24 @@
+package tests;
+
 import ConstantVariables.Constant;
 import applicationpages.BaseTest;
 import applicationpages.Homepage;
 import applicationpages.RestaurantDetail;
 import applicationpages.RestaurantList;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.Test;
 
-
+import java.io.IOException;
 
 
 public class CompleteScenario extends BaseTest implements Constant {
-
 
     Homepage homepage = new Homepage();
     RestaurantList restaurantList = new RestaurantList();
     RestaurantDetail restaurantDetail = new RestaurantDetail();
 
     @Test(priority = 1, description = "Visit Thuisbezorgd Hompe Page")
-    public void visitHomePage(){
+    public void visitHomePage() throws IOException, InvalidFormatException {
         this.homepage.goHomePage();
 
     }
@@ -31,6 +33,8 @@ public class CompleteScenario extends BaseTest implements Constant {
         this.homepage.selectAddressItem();
         this.homepage.selectArea();
     }
+
+    //Will fail afterwards needs tuning
 
     @Test(priority = 4)
     public void shouldBeRedirectedToRestaurantList() throws Exception {

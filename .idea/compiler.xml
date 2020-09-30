@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Selenium-Cucumber-TestNG-Docker" />
+        <module name="AutomationTestNg" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Selenium-Cucumber-TestNG-Docker" target="1.8" />
+      <module name="AutomationTestNg" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

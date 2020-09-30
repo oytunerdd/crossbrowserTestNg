@@ -11,11 +11,6 @@
       "browserName": "chrome",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver"
-    },
-    {
-      "browserName": "phantomjs",
-      "maxInstances": 1,
-      "seleniumProtocol": "WebDriver"
     }
   ],
   "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",

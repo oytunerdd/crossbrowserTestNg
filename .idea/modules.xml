@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Selenium-Cucumber-TestNG-Docker.iml" filepath="$PROJECT_DIR$/Selenium-Cucumber-TestNG-Docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutomationTestNg.iml" filepath="$PROJECT_DIR$/AutomationTestNg.iml" />
     </modules>
   </component>
 </project>

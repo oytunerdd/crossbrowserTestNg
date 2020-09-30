@@ -7,17 +7,13 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 
 public class RestaurantList extends BaseTest implements Constant{
-	WebDriverWait wait = new WebDriverWait(getDriver(),    10);
-	Actions actions = new Actions(getDriver());
 
     public void redirectedToRestaurantPage(){
 		System.out.println(getDriver().getCurrentUrl());
 		try{
-			wait.until(ExpectedConditions.urlMatches(expectedRestaurantUrl));
 			Assert.assertEquals(getDriver().getCurrentUrl(),expectedRestaurantUrl);
 		}catch (Exception e){
 			e.printStackTrace();

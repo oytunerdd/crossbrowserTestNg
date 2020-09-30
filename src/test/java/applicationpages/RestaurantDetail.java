@@ -34,7 +34,6 @@ public class RestaurantDetail extends BaseTest implements Constant {
 	}
 	@Test(priority = 5, description = "Checking Swiper Menu items - Alles Pizza ...")
 	public void checkSwiperMenuLinks() throws Exception {
-		waitForPageLoad(10);
 		driverWait().until(ExpectedConditions.visibilityOfElementLocated(swiperMenuItems));
 		List<WebElement> links = getDriver().findElement(swiperMenu).findElements(swiperMenuItems);
 		List<String> texts = new ArrayList<String>();

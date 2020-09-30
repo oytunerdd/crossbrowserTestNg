@@ -7,7 +7,7 @@
     <test name="Firefox Test"> <!--  preserve-order="true" -->
         <parameter name="browser" value="firefox"/>
         <classes>
-            <class name="CompleteScenario"/>
+            <class name="tests.CompleteScenario"/>
         </classes>
     </test>
 </suite>

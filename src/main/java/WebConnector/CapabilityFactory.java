@@ -1,13 +1,11 @@
 package WebConnector;
-
 import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class CapabilityFactory {
-    public Capabilities capabilities;
+    public static Capabilities capabilities;
 
-
-    public Capabilities getCapabilities (String browser) {
+//Bring options for testNG browser values
+    public static Capabilities getCapabilities(String browser) {
         if (browser.equals("firefox")) {
             capabilities = WebConnector.OptionsManager.getFirefoxOptions();
         }

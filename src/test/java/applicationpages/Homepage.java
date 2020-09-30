@@ -1,14 +1,16 @@
 package applicationpages;
 
 import ConstantVariables.Constant;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 
 public class Homepage extends BaseTest{
-	//WebDriver driver;
 
 	//Constructor
 	public Homepage(){
@@ -16,18 +18,17 @@ public class Homepage extends BaseTest{
 	}
 
 	//Page Methods
-	public void goHomePage(){
-		getDriver().navigate().to("https://www.thuisbezorgd.nl");
-		driverWait().until(ExpectedConditions.urlContains("https://www.thuisbezorgd.nl"));
+	public void goHomePage() throws IOException, InvalidFormatException {
+		String Url = getSpecificColumnData("src/test/testdata/Data.xlsx", "sheet1", "URL");
+		getDriver().navigate().to(Url);
+		driverWait().until(ExpectedConditions.urlContains(Url));
 		System.out.println(getDriver().getTitle());
 	}
-	@Test(priority = 2, description ="Accepting Cookies")
     public void acceptPrivacyPolicy() {
 		driverWait().until(ExpectedConditions.visibilityOfElementLocated(Constant.acceptPrivacyPopUp));
 
 		getDriver().findElement(Constant.acceptPrivacyPopUp).click();
 	}
-	@Test(priority = 3, description="Entering search key")
     public void enterSearchKey()
 	{
 		try {
@@ -41,7 +42,6 @@ public class Homepage extends BaseTest{
 
 	}
 
-	@Test(priority = 4, description = "Search for locations to deliver")
 	public void selectAddressItem(){
     	try{
     		driverWait().until(ExpectedConditions.visibilityOfElementLocated(Constant.suggestedAddress));
@@ -50,7 +50,6 @@ public class Homepage extends BaseTest{
     		e.printStackTrace();
 		}
 	}
-	@Test(priority = 4, description = "Select areas")
 	public void selectArea(){
 		try {
 			driverWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("reference")));

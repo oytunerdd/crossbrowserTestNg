@@ -8,11 +8,7 @@
     <test name="Chrome Test" >
         <parameter name="browser" value="chrome"/>
         <classes>
-            <class name="CompleteScenario"/>
-            <class name="applicationpages.RestaurantList"/>
-            <class name="applicationpages.RestaurantDetail"/>
-
-
+            <class name="tests.CompleteScenario"/>
         </classes>
     </test>
 </suite>
