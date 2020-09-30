@@ -17,7 +17,7 @@ public class CompleteScenario extends BaseTest implements Constant {
     RestaurantList restaurantList = new RestaurantList();
     RestaurantDetail restaurantDetail = new RestaurantDetail();
 
-    @Test(priority = 1, description = "Visit Thuisbezorgd Hompe Page")
+    @Test(priority = 1, description = "Visit Thuisbezorgd Home Page")
     public void visitHomePage() throws IOException, InvalidFormatException {
         this.homepage.goHomePage();
 
