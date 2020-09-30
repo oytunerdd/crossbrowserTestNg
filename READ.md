@@ -34,7 +34,7 @@ testng.xml configuration will run Chrome and Firefox accordingly.
 <!-- Config files -->
 chrome.xml
 firefox.xml
-headless.xml (chrome)
+chromeHeadless.xml (chrome)
 testng.xml
 ```
 
